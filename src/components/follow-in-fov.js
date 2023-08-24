@@ -72,7 +72,7 @@ AFRAME.registerComponent("follow-in-fov", {
     } else {
       // Slow down movement if hovering by dampening speed each frame.
       const speed = this._hoveredFrames
-        ? this.data.speed * (1.0 / ((this._hoveredFrames + 5.0) * 0.2))
+        ? this.data.speed * 1.0
         : this.data.speed;
       const t = speed * dt;
 
