@@ -749,6 +749,7 @@ export const keyboardMouseUserBindings = addSetsToBindings({
     {
       src: { value: paths.device.mouse.buttonRight },
       dest: { value: startInspectingViaMouse },
+      //dest: { value: "mirror-media-button" },
       xform: xforms.rising,
       priority: 200
     },

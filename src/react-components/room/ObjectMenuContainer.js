@@ -61,9 +61,22 @@ PlayerMenuItems.propTypes = {
 function ObjectMenuItems({ hubChannel, scene, activeObject, deselectObject, onGoToObject }) {
   const { canPin, isPinned, togglePinned } = usePinObject(hubChannel, scene, activeObject);
   const { canRemoveObject, removeObject } = useRemoveObject(hubChannel, scene, activeObject);
-  const { canGoTo, goToSelectedObject } = useGoToSelectedObject(scene, activeObject);
+  //const { canGoTo, goToSelectedObject } = useGoToSelectedObject(scene, activeObject);
   const url = getObjectUrl(activeObject);
-
+      /*
+        <GoToIcon />
+        <span>
+          <FormattedMessage id="object-menu.view-object-button" defaultMessage="View" />
+        </span>
+      </ObjectMenuButton>
+      <ObjectMenuButton
+        disabled={!canRemoveObject}
+        onClick={() => {
+          removeObject();
+          deselectObject();
+        }}
+      >
+      */
   return (
     <>
       <ObjectMenuButton disabled={!canPin} onClick={togglePinned}>
@@ -84,19 +97,6 @@ function ObjectMenuItems({ hubChannel, scene, activeObject, deselectObject, onGo
           </span>
         </ObjectMenuButton>
       )}
-      <ObjectMenuButton
-        disabled={!canGoTo}
-        onClick={() => {
-          goToSelectedObject();
-          deselectObject();
-          onGoToObject();
-        }}
-      >
-        <GoToIcon />
-        <span>
-          <FormattedMessage id="object-menu.view-object-button" defaultMessage="View" />
-        </span>
-      </ObjectMenuButton>
       <ObjectMenuButton
         disabled={!canRemoveObject}
         onClick={() => {
