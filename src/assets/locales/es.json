@@ -192,7 +192,7 @@
   "sign-in-modal.signin-message.tweet": "Necesitas iniciar sesión para enviar tuits.",
   "sign-in-modal.signin-message.unpin": "Necesitas iniciar sesión para desanclar objetos.",
   "sign-in-modal.wait-for-verification":
-    "<p>¡Correo enviado a {email}!</p><p>Para continuar, haz clic en el vínculo del correo usando un teléfono, tablet o computador.</p><p>¿No tienes correo? No podrás crear una cuenta.</p>",
+    "<p>Si esta dirección de correo electrónico está autorizada, recibirá un correo electrónico.</p><p>Para continuar, haz clic en el vínculo del correo usando un teléfono, tablet o computador.</p><p>¿No tienes correo? Es posible que esta dirección de correo electrónico no esté registrada.</p>",
   "spectating-label.label": "Estás mirando",
   "support.copied": "¡copiado!",
   "support.copy": "copiar",
